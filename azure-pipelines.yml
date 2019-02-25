@@ -6,9 +6,6 @@
 trigger:
 - master
 
-- task: NodeTool@0 
-  inputs:
-    versionSpec: '8.x' # replace this value with the version that you need for your project
 
 pool:
   vmImage: 'Ubuntu-16.04'
@@ -18,6 +15,12 @@ steps:
   inputs:
     versionSpec: '8.x'
   displayName: 'Install Node.js'
+
+- script: Install npm
+
+  
+
+
 
 
 
